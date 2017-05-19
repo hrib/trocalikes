@@ -27,7 +27,7 @@ html {
 <meta property="og:image" content="https://trocalikes.herokuapp.com/trocalikes/icone.jpg" />
 
 <meta property="og:url" content="https://trocalikes.herokuapp.com/" />
-<meta property="og:description" content="TROCA LIKES: Aplicativo para troca de likes de forma JUSTA" />
+<meta property="og:description" content="Aplicativo gratuito para troca de likes de forma JUSTA" />
 
 
 
