@@ -24,7 +24,9 @@ html {
 	
 </style>
 <meta property="og:title" content="TROCA LIKES no Face" />
-<meta property="og:image" content="http://trocalikes.herokuapp.com/trocalikes/icone.jpg" />
+<meta property="og:image" content="https://trocalikes.herokuapp.com/trocalikes/icone.jpg" />
+
+<meta property="og:url" content="https://trocalikes.herokuapp.com/" />
 <meta property="og:description" content="TROCA LIKES: Aplicativo para troca de likes de forma JUSTA" />
 
 
