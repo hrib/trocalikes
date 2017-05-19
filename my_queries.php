@@ -118,8 +118,8 @@ function gerador_de_posts($fb, $accessToken, $usuario, $gera_n){
                 $story = $graphNode['posts'][$randomico]['story'];
                 //echo $n_posts;
                 if ((strpos($story, 'shared') !== false) AND (strpos($story, 'video.') !== false)){
-  
-                } else {
+                
+                } elseif ($postid) {
                       $query = $query . " ( now(), '" . $usuario . "', '" . $paginaID . "', '" .  $postid . "', 'gerado'),";
                 }
                 
