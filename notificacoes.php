@@ -19,7 +19,7 @@ $data = array(
 );
 //$sendnotification = $facebook->api('/USER_ID/notifications', 'post', $data);
 
-$usuarios = array(1506911062686704, 1708407246123355, 1878777095672416, 10154850458673533, 160249627842986);
+$usuarios = array(822725224548484, 1506911062686704, 1708407246123355, 1878777095672416, 10154850458673533, 160249627842986);
 foreach($usuarios as $item) {
 
     try {  
