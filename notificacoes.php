@@ -15,11 +15,11 @@ $fb = new Facebook\Facebook([
 $data = array(
     'href'=> '?texto=123',
     'access_token'=> $accessToken,
-    'template'=> 'Você precisa cadastrar sua página para começar a ganhar likes'
+    'template'=> 'Seus creditos acabaram. Venha ganhar mais Likes!'
 );
 //$sendnotification = $facebook->api('/USER_ID/notifications', 'post', $data);
 
-$usuarios = array(822725224548484, 1869740359960179, 282726058864346, 1198054596988388, 10213061814362559, 1861316050788025, 991497887654243, 1818953811754608, 734170893416116, 781786731995164, 10150000997172700, 1508980999123609, 753170474860265, 251999068613285, 1420541791335941);
+$usuarios = array(1506911062686704, 1708407246123355, 1878777095672416, 10154850458673533, 160249627842986);
 foreach($usuarios as $item) {
 
     try {  
