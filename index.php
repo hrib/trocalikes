@@ -1,11 +1,11 @@
 <?php
 session_start(); 
-require_once(dirname(__FILE__)."/../src/Facebook/autoload.php");
+require_once(dirname(__FILE__)."/src/Facebook/autoload.php");
 require_once('my_queries.php');
 ?>
 <style>
 html { 
-  background: url("fundo.jpg") no-repeat center center fixed; 
+  background: url("/trocalikes/fundo.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +23,7 @@ html {
 }
 	
 </style>
-<meta property="og:image" content="http://apostagol.herokuapp.com/trocalikes/icone.jpg" />
+<meta property="og:image" content="http://trocalikes.herokuapp.com/trocalikes/icone.jpg" />
 <meta property="og:description" content="TROCA LIKES: Aplicativo para troca de likes de forma JUSTA" />
 
 
@@ -53,8 +53,8 @@ $fb = new Facebook\Facebook([
   'default_graph_version' => 'v2.9',
   ]);
 
-$helper = $fb->getCanvasHelper();
-//$helper = $fb->getRedirectLoginHelper();
+//$helper = $fb->getCanvasHelper();
+$helper = $fb->getRedirectLoginHelper();
 try {
   $accessToken = $helper->getAccessToken();
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
@@ -73,9 +73,9 @@ if (! isset($accessToken)) {
   //echo 'No OAuth data could be obtained from the signed request. User has not authorized your app yet.';
   $helper = $fb->getRedirectLoginHelper();
   $permissions = ['public_profile']; // optionnal
-  $loginUrl = $helper->getLoginUrl('https://apps.facebook.com/' . $app_name . '/', $permissions);
+  //$loginUrl = $helper->getLoginUrl('https://apps.facebook.com/' . $app_name . '/', $permissions);
   //$loginUrl = $helper->getLoginUrl('https://m.facebook.com/apps/' . $app_name . '/', $permissions);	
-  //$loginUrl = $helper->getLoginUrl('https://apostagol.herokuapp.com/' . $app_name . '/', $permissions);	
+  $loginUrl = $helper->getLoginUrl('https://trocalikes.herokuapp.com/', $permissions);	
   //confirme que essa url de login esta autorizada no aplicativo
   echo '<br><br><br><br><br><br><br>';
   echo "<script>function logar(){window.top.location.href='".$loginUrl."';}</script>";
