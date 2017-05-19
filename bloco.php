@@ -7,7 +7,7 @@ $user_id = $_SESSION["user_id"];
 $accessToken = $_SESSION["token"];
 
 
-        require_once(dirname(__FILE__)."/../src/Facebook/autoload.php");
+        require_once(dirname(__FILE__)."/src/Facebook/autoload.php");
         $app_id = getenv('FB_APP_ID');
         $app_secret = getenv('FB_APP_SECRET');
         $fb = new Facebook\Facebook([
