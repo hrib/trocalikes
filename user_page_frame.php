@@ -2,9 +2,13 @@
 session_start(); 
 require_once('my_queries.php');
 //echo 'fim';   
-$barra = strpos('/', $_POST['new_user_page']);
-$pagina = substr($_POST['new_user_page'],0,$barra);
-
+$barra = strpos($_POST['new_user_page'], '/');
+if($barra)
+{
+    $pagina = substr($_POST['new_user_page'],0,$barra);
+} else {
+    $pagina = $_POST['new_user_page'];   
+}
 //$pagina = str_replace('/', '' , $_POST['new_user_page']);
 
 
