@@ -314,6 +314,14 @@ $("#atualiza").click(function(){
       </table>
 </div>
 
+
+<div align="center" >
+<font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
+<input type="submit" id="atualiza" style="height:70px; width:100px" value="Mais Posts >>">
+</font>
+</div>
+
+
 <div id='DisplayDiv'>
 </div>
 
@@ -333,15 +341,15 @@ iframe3
 fim iframe
 <input type="button" value="Mais Posts >>" onClick="window.location=window.location;">
 -->
-<font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
 <br>
 <div align="center" >
 <font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
-<input type="submit" id="atualiza" value="Mais Posts >>">
+<input type="submit" id="atualiza" style="height:70px; width:100px" value="Mais Posts >>">
 </font>
 </div>
 <br>
 <br>
+<font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
 Troca Likes App - Todos os Direitos Reservados ::  <a href="privacy_policy.html">Privacy Policy</a> ::  <a href="privacy_policy.html">Terms of Service</a> 
 </font>
 
