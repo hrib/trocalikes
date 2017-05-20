@@ -286,7 +286,7 @@ $("#atualiza").click(function(){
 	  <td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
 	  <td> </td>
 		<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
-		<td align="center" ><font style="font-family: Arial; color:red; font-size:48px;"><span id="resposta"></span></font></td>
+		<td align="center" ><font style="font-family: Arial; color:red; font-size:36px;"><span id="resposta"></span></font></td>
 		<td> </td>
 		<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
 		<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>
