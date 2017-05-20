@@ -318,7 +318,7 @@ $("#atualiza").click(function(){
 
 <div align="center" >
 <font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
-<input type="submit" id="atualiza" style="height:70px; width:100px" value="Mais Posts >>">
+<input type="submit" id="atualiza" style="height:50px; width:200px" value="Mais Posts >>">
 </font>
 </div>
 
