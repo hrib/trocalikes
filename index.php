@@ -314,6 +314,7 @@ $("#atualiza").click(function(){
       </table>
 </div>
 
+<br>
 
 <div align="center" >
 <font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
@@ -323,6 +324,9 @@ $("#atualiza").click(function(){
 
 
 <div id='DisplayDiv'>
+	<br>
+	... carregando ...
+	<br>
 </div>
 
 <!--  
