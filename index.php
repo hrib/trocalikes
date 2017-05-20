@@ -163,10 +163,11 @@ $(document).ready(function(){
 	document.getElementById("resposta").innerHTML="";   
    }
    loadQueryResults();
-	
-$("#atualiza").click(function(){
-   loadQueryResults();
-	});
+  
+  //$("#atualiza").click(function(){
+  $("div[id=atualiza]").click(function(){
+  	loadQueryResults();
+  });
 
 
  $("#botao_pagina").click(function(){
