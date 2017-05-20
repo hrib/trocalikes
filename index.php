@@ -165,7 +165,10 @@ $(document).ready(function(){
    loadQueryResults();
   
   //$("#atualiza").click(function(){
-  $("div[id=atualiza]").click(function(){
+  $("#atualiza1").click(function(){
+  	loadQueryResults();
+  });
+ $("#atualiza2").click(function(){
   	loadQueryResults();
   });
 
@@ -319,7 +322,7 @@ $(document).ready(function(){
 
 <div align="center" >
 <font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
-<input type="submit" id="atualiza" style="height:50px; width:200px" value="Mais Posts >>">
+<input type="submit" id="atualiza1" style="height:50px; width:200px" value="Mais Posts >>">
 </font>
 </div>
 
@@ -349,7 +352,7 @@ fim iframe
 <br>
 <div align="center" >
 <font style="font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:11px;">
-<input type="submit" id="atualiza" style="height:50px; width:200px" value="Mais Posts >>">
+<input type="submit" id="atualiza2" style="height:50px; width:200px" value="Mais Posts >>">
 </font>
 </div>
 <br>
