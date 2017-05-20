@@ -323,7 +323,7 @@ $("#atualiza").click(function(){
 </div>
 
 
-<div id='DisplayDiv'>
+<div id='DisplayDiv' align="center">
 	<br>
 	... carregando ...
 	<br>
