@@ -9,7 +9,7 @@ if($barra)
 } else {
     $pagina = $_POST['new_user_page'];   
 }
-//$pagina = str_replace('/', '' , $_POST['new_user_page']);
+$pagina = str_replace(' ', '' , $pagina);
 
 
 if (isset($pagina )) { 
