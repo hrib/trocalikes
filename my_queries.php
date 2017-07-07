@@ -45,29 +45,31 @@ try {
  console.log($dono_post . ': Facebook SDK returned an error: ' . $e->getMessage());
  //exit;
 }
-  
-$graphNode = $response->getGraphNode();
-//echo '<table border="1" style="font-family:arial; font-size:9px;">';
-$check_click = "nao clicado";
-foreach ($graphNode['likes'] as $likes) {
-    if( $likes['id'] == $clicker_id)
-    {
-        $check_click = "clicado";
-        sql_query("UPDATE tl_cliques SET clicker_check = 'clicado' WHERE id = " . $id . ";"); 
-        break;
-    }
-    //echo '<tr>';
-    //echo '<td>' . $likes['id'] . '</td>';
-    //echo '</tr>';
-} 
-$tempo_now = date("Y-m-d H:i:s");
-$diff_tempo = round((strtotime($tempo_now) - strtotime($tempo_update)) / 60,0);  
-//echo '</table>';
-if( ($diff_tempo > 30) AND ($check_click == 'nao clicado'))
+
+if (!empty($response)) 
 {
-    sql_query("UPDATE tl_cliques SET clicker_check = 'cancelado' WHERE id = " . $id . ";");   
-}
-  
+    $graphNode = $response->getGraphNode();
+    //echo '<table border="1" style="font-family:arial; font-size:9px;">';
+    $check_click = "nao clicado";
+    foreach ($graphNode['likes'] as $likes) {
+        if( $likes['id'] == $clicker_id)
+        {
+            $check_click = "clicado";
+            sql_query("UPDATE tl_cliques SET clicker_check = 'clicado' WHERE id = " . $id . ";"); 
+            break;
+        }
+        //echo '<tr>';
+        //echo '<td>' . $likes['id'] . '</td>';
+        //echo '</tr>';
+    } 
+    $tempo_now = date("Y-m-d H:i:s");
+    $diff_tempo = round((strtotime($tempo_now) - strtotime($tempo_update)) / 60,0);  
+    //echo '</table>';
+    if( ($diff_tempo > 30) AND ($check_click == 'nao clicado'))
+    {
+        sql_query("UPDATE tl_cliques SET clicker_check = 'cancelado' WHERE id = " . $id . ";");   
+    }
+} 
    
 return array($check_click, $tempo_now, $diff_tempo);
 }
