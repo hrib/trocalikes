@@ -46,11 +46,11 @@ try {
  //exit;
 }
 
+$check_click = "nao clicado";
 if (!empty($response)) 
 {
     $graphNode = $response->getGraphNode();
     //echo '<table border="1" style="font-family:arial; font-size:9px;">';
-    $check_click = "nao clicado";
     foreach ($graphNode['likes'] as $likes) {
         if( $likes['id'] == $clicker_id)
         {
@@ -62,6 +62,8 @@ if (!empty($response))
         //echo '<td>' . $likes['id'] . '</td>';
         //echo '</tr>';
     } 
+} 
+    
     $tempo_now = date("Y-m-d H:i:s");
     $diff_tempo = round((strtotime($tempo_now) - strtotime($tempo_update)) / 60,0);  
     //echo '</table>';
@@ -69,9 +71,7 @@ if (!empty($response))
     {
         sql_query("UPDATE tl_cliques SET clicker_check = 'cancelado' WHERE id = " . $id . ";");   
     }
-} 
-   
-return array($check_click, $tempo_now, $diff_tempo);
+    return array($check_click, $tempo_now, $diff_tempo);
 }
 
 function gerador_de_posts($fb, $accessToken, $usuario, $gera_n){
